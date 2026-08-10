@@ -4,7 +4,6 @@ import ConfirmModal from "../../components/confirmationBox/ConfirmationBox";
 import Sidebar from "../../components/Dashboard/Sidebar/Sidebar";
 import UserMenu from "../../config/UserMenu";
 import DashboardNavbar from "../../components/Dashboard/Navbar/Navbar";
-import StatusTimeline from "../../components/StatusTimeline/StatusTimeline";
 
 const UserLayout = () => {
   const navigate=useNavigate()

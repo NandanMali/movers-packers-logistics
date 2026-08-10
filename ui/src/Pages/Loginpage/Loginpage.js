@@ -6,8 +6,6 @@ import { apiUrlUser } from "../../apiUrl";
 import { Link, useNavigate } from "react-router-dom";
 
 const LoginPage = () => {
-  const [username, setUsername] = useState("");
-  const [rememberMe, setRememberMe] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
   const [loading, setLoading] = useState(false);
   const [aleert, setAlert] = useState(null);
@@ -23,13 +21,7 @@ const LoginPage = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
 
-    const rememberedUser = localStorage.getItem("rememberUser");
-
-    if (rememberedUser) {
-      setUsername(rememberedUser);
-      setRememberMe(true);
-    }
-  }, []);
+   }, []);
 
   const [errors, setErrors] = useState({});
 

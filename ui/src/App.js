@@ -33,19 +33,15 @@ import { useEffect } from "react";
 import Payments from "./Panel/AdminPanel/Payments.jsx";
 import Tracking from "./Panel/AdminPanel/Tracking.jsx";
 import Support from "./Panel/AdminPanel/Support.jsx";
-import Vehicles from "./Panel/AdminPanel/Vehicles/Vehicles.jsx";
-import Drivers from "./Panel/AdminPanel/Drivers/Drivers.jsx";
 import CreateBooking from "./Panel/UserPanel/Booking/CreateBooking.jsx";
 import PartnerVehicles from "./Panel/TransportPartnerPanel/Vehicles/Vehicles.jsx";
 import PartnerDrivers from "./Panel/TransportPartnerPanel/Driver/Drivers.jsx";
 import CompleteProfile from "./Panel/TransportPartnerPanel/CompleteProfile/CompleteProfile.jsx";
 import QuoteRequests from "./Panel/TransportPartnerPanel/QuoteRequests/QuoteRequests.jsx";
 import MyBookings from "./Panel/UserPanel/MyBookings/MyBookings.jsx";
-import Payment from "./Panel/UserPanel/Payment/Payment.jsx";
 import AssignedJobs from "./Panel/TransportPartnerPanel/AssignedJobs/AssignedJobs.jsx";
 import MyOrders from "./Panel/TransportPartnerPanel/MyOrders/MyOrders.jsx";
 import QuoteStatus from "./Panel/TransportPartnerPanel/QuotesStatus/QuoteStatus.jsx";
-import PartnerCard from "./Panel/AdminPanel/PartnerPage/PartnerCard.jsx";
 import AdminBookings from "./Panel/AdminPanel/Bookings/Bookings.jsx";
 import PaymentSuccess from "./Panel/UserPanel/Payment/Success/PaymentSuccess.jsx";
 import Cancel from "./Panel/UserPanel/Payment/Extra/cancel.jsx";
@@ -119,7 +115,6 @@ function App() {
             element={<AdminVehicles />}
           />
           <Route path="bookings" element={<AdminBookings />} />
-          <Route path="drivers" element={<Drivers />} />
           <Route path="payments" element={<AdminPayments />} />
           <Route path="tracking" element={<Tracking />} />
           <Route path="support" element={<Support />} />

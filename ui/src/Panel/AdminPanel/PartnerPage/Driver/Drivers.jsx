@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "./driver.css";
 import axios from "axios";
-import { FaIdCard, FaPhone, FaPlus } from "react-icons/fa";
+import { FaIdCard, FaPhone } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { useNavigate, useParams } from "react-router-dom";
 import { apiUrlPartnerDriver } from "../../../../apiUrl.js";

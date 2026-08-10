@@ -6,7 +6,7 @@ import BookingDetailsModal from "./BookingDetailsModal";
 
 import "./bookings.css";
 
-import { apiUrlBooking, apiUrlUserBooking } from "../../../apiUrl";
+import { apiUrlUserBooking } from "../../../apiUrl";
 import StatsCard from "../../../components/Dashboard/StatsCard/StatsCard";
 import PageToolbar from "../../TransportPartnerPanel/components/PageToolbar/PageToolbar";
 
@@ -50,7 +50,6 @@ function AdminBookings() {
   //-------------------------------------
 
   const filteredbookings = bookings.filter((booking) => {
-    const searchText = search.toLowerCase();
     const matchSearch =
       booking.bookingId.toLowerCase().includes(search.toLowerCase()) 
 

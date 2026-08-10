@@ -6,7 +6,7 @@ import { apiUrlCategory ,catuploadurl ,apiUrlSubcategory } from "../../apiUrl";
 import { useNavigate } from "react-router-dom";
 
 const AdminCategories = () => {
-  const [loading, setLoading] = useState(false);
+  const [loading,setLoading] = useState(false);
   const [alertData, setAlert] = useState(null);
   const [categories, setCategories] = useState({
     cName: "",
@@ -113,7 +113,6 @@ const AdminCategories = () => {
 
   const [search, setSearch] = useState("");
   const [catdata, setCatdata] = useState([]);
-  let count = 0;
 
   useEffect(() => {
       axios.get(apiUrlCategory + "fetch").then((res) => {
@@ -156,7 +155,7 @@ const AdminCategories = () => {
         setDeleteSubCategories(null);
       })
       .catch((err) => {
-        if (err.data.status==404) {
+        if (err.data.status===404) {
           setCatdata((prevcatdata) =>
           prevcatdata.filter((category) => category._id !== selectedCategoryId),
         );
@@ -347,7 +346,7 @@ const AdminCategories = () => {
                 {filteredcategories.map((category) => (
                   <tr key={category._id}>
                     <td>{category._id}</td>
-                    <td><img src={catuploadurl+category.cIcon} style={{height:"100px",width:"100px", borderRadius:"50%"}}/></td>
+                    <td><img src={catuploadurl+category.cIcon} style={{height:"100px",width:"100px", borderRadius:"50%"}} alt=""/></td>
                     <td>{category.cName}</td>
                     <td>
                       <button
