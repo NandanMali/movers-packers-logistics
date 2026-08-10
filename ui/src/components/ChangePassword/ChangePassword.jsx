@@ -14,7 +14,6 @@ function ChangePassword(){
     const [errors,setErrors]=useState({});
     const [aleert,setAlert]=useState();
     const [showPassword,setShowPassword]=useState();
-    const navigate=useNavigate();
     const validateField = (name, value) => {
     let error = "";
 
@@ -153,7 +152,7 @@ function ChangePassword(){
           
           })
         .catch((err) => {
-          if(err.status==404)
+          if(err.status===404)
            setAlert({ message: "Incorrect Old Password", type: "errorAlert" })
           else{ 
           setAlert({ message: "Password Changed Failed", type: "errorAlert" });

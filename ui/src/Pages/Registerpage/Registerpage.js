@@ -224,7 +224,6 @@ const RegisterPage = () => {
       setExistingsEmail(existingEmail);
       setExistingsUsernames(existingUsername);
       }).catch(()=>{
-        const users={};
 
       })
 },[]);
@@ -312,18 +311,6 @@ const RegisterPage = () => {
 
     if (validateForm()  &&  passwordMatch) {
       setErrors("");
-    
-
-    const users = {
-      name: formData.name,
-      email: formData.email,
-      username: formData.username,
-      phone: formData.phone,
-      role: formData.role,
-      password: formData.password,
-      address: formData.address,
-      file:formData.file,
-    };
     setAlert(null);
 
     const formdata1=new FormData();

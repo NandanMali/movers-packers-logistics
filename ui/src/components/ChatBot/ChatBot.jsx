@@ -38,7 +38,6 @@ const ChatBot = () => {
 
         setLoading(true);
 
-        const question = message.trim().toLowerCase();
 
 
         try{

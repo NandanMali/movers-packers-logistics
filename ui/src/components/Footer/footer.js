@@ -29,11 +29,11 @@ function Footer() {
                 </div>
                 <div className="col-lg-3 col-md-6">
                     <h4 className="text-light mb-4">Services</h4>
-                    <a className="btn btn-link" href="">Home Shifting</a>
-                    <a className="btn btn-link" href="">Packing Service</a>
-                    <a className="btn btn-link" href="">Transportation</a>
-                    <a className="btn btn-link" href="">Furniture Relocation</a>
-                    <a className="btn btn-link" href="">Appliances Moving</a>
+                    <div className="btn btn-link" >Home Shifting</div>
+                    <div className="btn btn-link" >Packing Service</div>
+                    <div className="btn btn-link" >Transportation</div>
+                    <div className="btn btn-link" >Furniture Relocation</div>
+                    <div className="btn btn-link" >Appliances Moving</div>
                 </div>
                 <div className="col-lg-3 col-md-6">
                     <h4 className="text-light mb-4">Newsletter</h4>
@@ -50,7 +50,7 @@ Subscribe to receive updates directly in your inbox.</p>
             <div className="copyright">
                 <div className="row">
                     <div className="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a className="border-bottom" href="#">Movers & Packers</a>, All Right Reserved.
+                        &copy; <div className="border-bottom" >Movers & Packers</div>, All Right Reserved.
 
                        
                     </div>

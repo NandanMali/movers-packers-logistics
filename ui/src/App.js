@@ -30,7 +30,6 @@ import PartnerProfile from "./Panel/TransportPartnerPanel/Profile.jsx";
 import PartnerSettings from "./Panel/TransportPartnerPanel/Settings.jsx";
 import ChatBot from "./components/ChatBot/ChatBot.jsx";
 import { useEffect } from "react";
-import Payments from "./Panel/AdminPanel/Payments.jsx";
 import Tracking from "./Panel/AdminPanel/Tracking.jsx";
 import Support from "./Panel/AdminPanel/Support.jsx";
 import CreateBooking from "./Panel/UserPanel/Booking/CreateBooking.jsx";

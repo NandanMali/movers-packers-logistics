@@ -1,32 +1,15 @@
-import {
-    FaHome,
-    // FaUsers,
-    FaTruck,
-    FaCar,
-    FaUserTie,
-    FaMoneyBill,
-    FaCog,
-    FaMapMarkerAlt,
-    FaTags,
-    // FaHeadset,
-    FaSignOutAlt
-} from "react-icons/fa";
-
 import { 
   FaGaugeHigh,
   FaUsers,
   FaUserGroup,
   FaLayerGroup,
   FaCalendarCheck,
-  FaTruckFast,
   FaIndianRupeeSign,
-  FaChartLine,
   FaLocationDot,
   FaHeadset,
   FaUserLarge,
   FaGear,
   FaRightFromBracket,
-  FaIdCard
  } from 'react-icons/fa6';
 
 const AdminMenu = [

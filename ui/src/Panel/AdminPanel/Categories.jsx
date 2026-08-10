@@ -6,7 +6,6 @@ import { apiUrlCategory ,catuploadurl ,apiUrlSubcategory } from "../../apiUrl";
 import { useNavigate } from "react-router-dom";
 
 const AdminCategories = () => {
-  const [loading,setLoading] = useState(false);
   const [alertData, setAlert] = useState(null);
   const [categories, setCategories] = useState({
     cName: "",
@@ -86,7 +85,6 @@ const AdminCategories = () => {
 
     if (validateForm()) {
       setErrors({});
-      setLoading(true);
       setAlert(null);
       const formdata1 = new FormData();
       formdata1.append("cName", categories.cName);
@@ -105,9 +103,7 @@ const AdminCategories = () => {
         .catch((err) => {
           setAlert({ message: "Category Addition Failed", type: "errorAlert" });
         })
-        .finally(() => {
-          setLoading(false);
-        });
+        
     }
   };
 
