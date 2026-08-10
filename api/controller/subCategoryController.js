@@ -5,7 +5,7 @@ import url from "url";
 import path from "path";
 
 //to link user model on controller
-import SubcategorySchemaModel from "../models/subcategoryModel.js";
+import SubcategorySchemaModel from "../models/subCategoryModel.js";
 
 const __dirname = url.fileURLToPath(new URL(".", import.meta.url));
 
