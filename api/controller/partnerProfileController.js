@@ -1,5 +1,5 @@
-import PartnerProfileSchemaModel from "../Models/PartnerProfileModel.js";
-import PartnerProfileModel from "../Models/PartnerProfileModel.js";
+import PartnerProfileSchemaModel from "../models/PartnerProfileModel.js";
+import PartnerProfileModel from "../models/PartnerProfileModel.js";
 
 export const savePartnerProfile = async (req, res) => {
 
