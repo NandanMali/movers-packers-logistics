@@ -1,0 +1,25 @@
+.user-page {
+  background: white;
+  padding: 25px;
+  border-radius: 20px;
+}
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.booking-form input,
+.booking-form select {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.booking-form button {
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}

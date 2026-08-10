@@ -1,0 +1,362 @@
+.vehicle-page{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:25px;
+
+}
+
+.vehicle-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:25px;
+
+}
+
+.vehicle-header h2{
+
+    margin-bottom:5px;
+
+}
+
+.vehicle-header p{
+
+    color:#777;
+
+}
+
+.add-btn{
+
+    background:#E31E24;
+
+    color:white;
+
+    border:none;
+
+    padding:12px 22px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+}
+
+.vehicle-table{
+
+    overflow-x:auto;
+
+}
+
+.vehicle-table table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+.vehicle-table th{
+
+    background:#fafafa;
+
+    text-align:left;
+
+    padding:16px;
+
+    border-bottom:1px solid #eee;
+
+}
+
+.vehicle-table td{
+
+    padding:16px;
+
+    border-bottom:1px solid #eee;
+
+}
+
+.vehicle-img{
+
+    width:55px;
+
+    height:55px;
+
+    object-fit:cover;
+
+    border-radius:10px;
+
+}
+
+.vehicle-placeholder{
+
+    width:55px;
+
+    height:55px;
+
+    background:#f5f5f5;
+
+    border-radius:10px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:22px;
+
+}
+
+.status{
+
+    padding:6px 14px;
+
+    border-radius:20px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+
+.status.available{
+
+    background:#e8f8ed;
+
+    color:#28a745;
+
+}
+
+.status.assigned{
+
+    background:#fff7e6;
+
+    color:#f59e0b;
+
+}
+
+.status.on.trip{
+
+    background:#e6f0ff;
+
+    color:#2563eb;
+
+}
+
+.status.maintenance{
+
+    background:#fff0e6;
+
+    color:#ea580c;
+
+}
+
+.status.inactive{
+
+    background:#ffe8e8;
+
+    color:#dc2626;
+
+}
+
+.vehicle-table button{
+
+    margin-right:8px;
+
+    border:none;
+
+    padding:8px 14px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+}
+
+.empty-table{
+
+    text-align:center;
+
+    padding:40px;
+
+    color:#888;
+
+}
+
+
+.modal-overlay{
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    background:rgba(0,0,0,.5);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:999;
+
+}
+
+.vehicle-modal{
+
+    background:white;
+
+    width:600px;
+
+    max-height:90vh;
+
+    overflow:auto;
+
+    border-radius:20px;
+
+    padding:25px;
+
+}
+
+.modal-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-bottom:20px;
+
+}
+
+.vehicle-form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+.vehicle-form input,
+.vehicle-form select{
+
+    padding:12px;
+
+    border:1px solid #ddd;
+
+    border-radius:10px;
+
+}
+
+.preview-img{
+
+    width:100px;
+
+    border-radius:10px;
+
+}
+
+.save-btn{
+
+    background:#E31E24;
+
+    color:white;
+
+    border:none;
+
+    padding:14px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+}
+
+
+.vehicle-toolbar{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:15px;
+
+    margin-bottom:20px;
+
+}
+
+.vehicle-toolbar input{
+
+    flex:1;
+
+    padding:12px;
+
+    border:1px solid #ddd;
+
+    border-radius:10px;
+
+}
+
+.vehicle-toolbar select{
+
+    width:220px;
+
+    padding:12px;
+
+    border:1px solid #ddd;
+
+    border-radius:10px;
+
+}
+
+
+
+.vehicle-details{
+    display:flex;
+    gap:30px;
+    align-items:flex-start;
+}
+
+.vehicle-image-section{
+    width:220px;
+    display:flex;
+    justify-content:center;
+}
+
+.vehicle-preview{
+    width:200px;
+    height:200px;
+    object-fit:cover;
+    border-radius:16px;
+}
+
+.vehicle-placeholder.large{
+    width:200px;
+    height:200px;
+    font-size:60px;
+}
+
+.vehicle-info{
+    flex:1;
+}
+
+.vehicle-info p{
+    margin-bottom:14px;
+    font-size:15px;
+}

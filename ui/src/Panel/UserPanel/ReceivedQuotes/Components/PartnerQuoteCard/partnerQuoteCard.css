@@ -1,0 +1,183 @@
+.partner-quote-card{
+
+    background:#fff;
+
+    border-radius:15px;
+
+    padding:20px;
+
+    border:1px solid #eee;
+
+    box-shadow:0 5px 18px rgba(0,0,0,.06);
+
+    transition:.3s;
+
+}
+
+.partner-quote-card:hover{
+
+    transform:translateY(-4px);
+
+}
+
+.partner-card-top{
+
+    display:flex;
+
+    gap:15px;
+
+    align-items:center;
+
+    margin-bottom:20px;
+
+}
+
+.partner-logo{
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:12px;
+
+    object-fit:cover;
+
+    border:1px solid #eee;
+
+}
+
+.partner-card-top h3{
+
+    margin:0;
+
+    color:#222;
+
+}
+
+.partner-card-top p{
+
+    margin-top:5px;
+
+    color:#777;
+
+    font-size:14px;
+
+}
+
+.quote-price{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:15px 0;
+
+    border-top:1px solid #eee;
+
+    border-bottom:1px solid #eee;
+
+}
+
+.quote-price span{
+
+    color:#666;
+
+}
+
+.quote-price h2{
+
+    margin:0;
+
+    color:#E31E24;
+
+}
+
+.quote-days{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    padding:18px 0;
+
+}
+
+.quote-message{
+
+    background:#fafafa;
+
+    border-radius:10px;
+
+    padding:15px;
+
+    margin-bottom:20px;
+
+}
+
+.quote-message strong{
+
+    display:block;
+
+    margin-bottom:8px;
+
+}
+
+.quote-message p{
+
+    margin:0;
+
+    color:#555;
+
+}
+
+.partner-card-actions{
+
+    display:flex;
+
+    gap:15px;
+
+}
+
+.partner-card-actions button{
+
+    /* flex:1; */
+
+    border:none;
+
+    padding:12px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+}
+
+.primary-btn{
+
+    background:#E31E24;
+
+    /* color:#fff; */
+ color:#E31E24;
+}
+
+.primary-btn:hover{
+
+    background:#c4171d;
+
+}
+/* 
+.secondary-btn{
+
+    background:#eee;
+
+}
+
+.secondary-btn:hover{
+
+    background:#ddd;
+
+} */

@@ -1,0 +1,257 @@
+.booking-card{
+
+    background:#fff;
+
+    border-radius:18px;
+
+    padding:22px;
+
+    border:1px solid #ececec;
+
+    box-shadow:0 6px 18px rgba(0,0,0,.06);
+
+    transition:.3s;
+
+}
+
+.booking-card:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 12px 30px rgba(0,0,0,.10);
+
+}
+
+.booking-card-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+    margin-bottom:20px;
+
+}
+
+.booking-card-header h3{
+
+    margin:0;
+
+    color:#222;
+
+}
+
+.booking-card-header p{
+
+    margin:5px 0 0;
+
+    color:#777;
+
+}
+
+.booking-status{
+
+    padding:8px 15px;
+
+    border-radius:30px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+
+.pending{
+
+    background:#fff4cc;
+
+    color:#c88700;
+
+}
+
+.quoteAccepted{
+
+    background:#dceeff;
+
+    color:#0077cc;
+
+}
+
+.confirmed{
+
+    background:#d9ffe3;
+
+    color:#138c37;
+
+}
+
+.assigned{
+
+    background:#efe4ff;
+
+    color:#6b27c8;
+
+}
+
+.progress{
+
+    background:#ffe7d4;
+
+    color:#dd6b00;
+
+}
+
+.completed{
+
+    background:#d8fff5;
+
+    color:#00785b;
+
+}
+
+.cancelled{
+
+    background:#ffe2e2;
+
+    color:#d62828;
+
+}
+
+.booking-route{
+
+    margin-bottom:20px;
+
+}
+
+.booking-route div{
+
+    display:flex;
+
+    gap:12px;
+
+    margin-bottom:12px;
+
+    color:#555;
+
+}
+
+.booking-route svg{
+
+    color:#E31E24;
+
+    margin-top:3px;
+
+}
+
+.booking-info{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:15px;
+
+    margin-bottom:22px;
+
+}
+
+.booking-info div{
+
+    display:flex;
+
+    gap:8px;
+
+    align-items:center;
+
+    color:#666;
+
+    font-size:14px;
+
+}
+
+.booking-info svg{
+
+    color:#E31E24;
+
+}
+
+.booking-fare{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 0;
+
+    border-top:1px solid #eee;
+
+    border-bottom:1px solid #eee;
+
+    margin-bottom:20px;
+
+}
+
+.booking-fare span{
+
+    color:#666;
+
+}
+
+.booking-fare h2{
+
+    color:#E31E24;
+
+    margin:0;
+
+}
+
+.booking-view-btn{
+
+    width:100%;
+
+    border:none;
+
+    background:#E31E24;
+
+    color:#fff;
+
+    padding:14px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:10px;
+
+    transition:.3s;
+
+}
+
+.booking-view-btn:hover{
+
+    background:#b5161b;
+
+}
+
+@media(max-width:768px){
+
+    .booking-info{
+
+        grid-template-columns:1fr;
+
+    }
+
+}

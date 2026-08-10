@@ -1,0 +1,15 @@
+.partner-page {
+  padding: 25px;
+}
+
+.partner-stats {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+}
+
+.partner-card {
+  background: white;
+  padding: 25px;
+  border-radius: 20px;
+}

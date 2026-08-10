@@ -1,0 +1,405 @@
+/* =====================================
+   Quote Details Page
+===================================== */
+
+.quote-details-page{
+    padding:25px;
+    background:#f5f7fb;
+    min-height:100vh;
+}
+
+/* =====================================
+   Loading
+===================================== */
+
+.quote-details-loading{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:22px;
+    font-weight:600;
+    color:#666;
+}
+
+/* =====================================
+   Header
+===================================== */
+
+.details-header{
+    display:flex;
+    align-items:center;
+    gap:20px;
+    margin-bottom:25px;
+}
+
+.details-header h2{
+    font-size:30px;
+    color:#222;
+    margin-bottom:5px;
+}
+
+.details-header p{
+    color:#777;
+}
+
+.back-btn{
+    border:none;
+    background:#fff;
+    padding:12px 18px;
+    border-radius:10px;
+    cursor:pointer;
+    display:flex;
+    align-items:center;
+    gap:8px;
+    font-weight:600;
+    box-shadow:0 4px 12px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.back-btn:hover{
+    background:#E53935;
+    color:#fff;
+}
+
+/* =====================================
+   Status
+===================================== */
+
+.booking-status-card{
+    margin-bottom:25px;
+}
+
+
+.Pending{
+
+    background:#fff4cc;
+
+    color:#c88700;
+     padding:10px 18px;
+    border-radius:30px;
+    font-weight:600;
+
+}
+
+.QuoteAccepted{
+
+    background:#dceeff;
+
+    color:#0077cc;
+     padding:10px 18px;
+    border-radius:30px;
+    font-weight:600;
+
+}
+
+.Confirmed{
+
+    background:#d9ffe3;
+
+    color:#138c37;
+     padding:10px 18px;
+    border-radius:30px;
+    font-weight:600;
+
+}
+
+.Assigned{
+
+    background:#efe4ff;
+
+    color:#6b27c8;
+     padding:10px 18px;
+    border-radius:30px;
+    font-weight:600;
+
+}
+
+.Progress{
+
+    background:#ffe7d4;
+
+    color:#dd6b00;
+     padding:10px 18px;
+    border-radius:30px;
+    font-weight:600;
+
+}
+
+.Completed{
+
+    background:#d8fff5;
+
+    color:#00785b;
+     padding:10px 18px;
+    border-radius:30px;
+    font-weight:600;
+
+}
+
+.Cancelled{
+
+    background:#ffe2e2;
+
+    color:#d62828;
+     padding:10px 18px;
+    border-radius:30px;
+    font-weight:600;
+
+}
+
+
+/* =====================================
+   Cards
+===================================== */
+
+.details-card{
+    background:#fff;
+    border-radius:16px;
+    padding:25px;
+    margin-bottom:25px;
+    box-shadow:0 8px 25px rgba(0,0,0,.06);
+    border:1px solid #ececec;
+}
+
+.details-card h3{
+    margin-bottom:20px;
+    color:#222;
+    font-size:22px;
+}
+
+/* =====================================
+   Details Grid
+===================================== */
+
+.details-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+.details-grid div{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    color:#444;
+    font-size:15px;
+}
+
+.details-grid svg{
+    color:#E53935;
+    font-size:18px;
+}
+
+/* =====================================
+   Moving Details
+===================================== */
+
+.moving-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.moving-grid div{
+    background:#fafafa;
+    padding:18px;
+    border-radius:12px;
+    border:1px solid #eee;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.moving-grid svg{
+    color:#E53935;
+    font-size:22px;
+}
+
+.moving-grid span{
+    color:#777;
+    font-size:14px;
+}
+
+.moving-grid strong{
+    color:#222;
+    font-size:17px;
+}
+
+/* =====================================
+   Distance
+===================================== */
+
+.distance-box{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    font-size:22px;
+    color:#E53935;
+    font-weight:700;
+}
+
+.distance-box svg{
+    font-size:28px;
+}
+
+/* =====================================
+   Notes
+===================================== */
+
+.note-box{
+    background:#fafafa;
+    padding:20px;
+    border-radius:12px;
+    display:flex;
+    align-items:flex-start;
+    gap:15px;
+}
+
+.note-box svg{
+    color:#E53935;
+    font-size:22px;
+    margin-top:2px;
+}
+
+.note-box p{
+    color:#555;
+    line-height:1.7;
+}
+
+/* =====================================
+   Images
+===================================== */
+
+.image-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(180px,1fr));
+    gap:20px;
+}
+
+.booking-image{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+    border-radius:12px;
+    border:1px solid #ddd;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.booking-image:hover{
+    transform:scale(1.04);
+}
+
+/* =====================================
+   Budget
+===================================== */
+
+.budget-card{
+    display:flex;
+    align-items:center;
+    gap:20px;
+    background:#fff6f6;
+    border:1px solid #ffd0d0;
+}
+
+.budget-card svg{
+    font-size:42px;
+    color:#E53935;
+}
+
+.budget-card p{
+    color:#777;
+    margin-bottom:5px;
+}
+
+.budget-card h2{
+    color:#E53935;
+    font-size:34px;
+}
+
+/* =====================================
+   Footer
+===================================== */
+
+.quote-action{
+    position:sticky;
+    bottom:15px;
+    background:#fff;
+    border-radius:16px;
+    padding:20px;
+    box-shadow:0 8px 30px rgba(0,0,0,.12);
+    display:flex;
+    justify-content:flex-end;
+    z-index:100;
+}
+
+.quote-btn{
+    border:none;
+    background:#E53935;
+    color:#fff;
+    padding:15px 35px;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:17px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.quote-btn:hover{
+    background:#c62828;
+}
+
+/* =====================================
+   Responsive
+===================================== */
+
+@media(max-width:992px){
+
+    .details-grid{
+        grid-template-columns:1fr;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .quote-details-page{
+        padding:15px;
+    }
+
+    .details-header{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    .moving-grid{
+        grid-template-columns:1fr;
+    }
+
+    .image-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .budget-card{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    .quote-action{
+        justify-content:center;
+    }
+
+    .quote-btn{
+        width:100%;
+    }
+
+}
+
+@media(max-width:480px){
+
+    .image-grid{
+        grid-template-columns:1fr;
+    }
+
+}

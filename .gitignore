@@ -1,0 +1,17 @@
+# Secret environment files
+.env
+.env.*
+!.env.example
+
+# Installed packages
+node_modules/
+
+# React production build
+build/
+
+# Logs
+*.log
+
+# Editor/system files
+.vscode/
+.DS_Store

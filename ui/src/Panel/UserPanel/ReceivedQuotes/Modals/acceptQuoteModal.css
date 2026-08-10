@@ -1,0 +1,131 @@
+.modal-overlay{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.45);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:9999;
+
+}
+
+.accept-modal{
+
+    width:450px;
+
+    max-width:95%;
+
+    background:#fff;
+
+    border-radius:15px;
+
+    padding:25px;
+
+}
+
+.accept-modal h2{
+
+    margin:0;
+
+}
+
+.accept-modal p{
+
+    color:#666;
+
+    margin:10px 0 20px;
+
+}
+
+.quote-summary{
+
+    border:1px solid #eee;
+
+    border-radius:10px;
+
+    padding:15px;
+
+    margin-bottom:20px;
+
+}
+
+.quote-summary div{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-bottom:12px;
+
+}
+
+.quote-summary div:last-child{
+
+    margin-bottom:0;
+
+}
+
+.warning-box{
+
+    background:#fff7df;
+
+    border:1px solid #ffe08a;
+
+    border-radius:10px;
+
+    padding:15px;
+
+    margin-bottom:20px;
+
+}
+
+.warning-box ul{
+
+    margin:10px 0 0 20px;
+
+}
+
+.modal-buttons{
+
+    display:flex;
+
+    gap:15px;
+
+}
+
+.modal-buttons button{
+
+    flex:1;
+
+    border:none;
+
+    border-radius:10px;
+
+    padding:12px;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+}
+
+.cancel-btn{
+
+    background:#eee;
+
+}
+
+.accept-btn{
+
+    background:#E31E24;
+
+    color:#fff;
+
+}

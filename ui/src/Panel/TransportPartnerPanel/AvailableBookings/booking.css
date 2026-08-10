@@ -1,0 +1,259 @@
+.booking-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fill,minmax(360px,1fr));
+
+    gap:20px;
+
+}
+
+.booking-card{
+
+    background:#fff;
+
+    border-radius:15px;
+
+    padding:20px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.booking-card:hover{
+
+    transform:translateY(-5px);
+
+}
+
+.booking-top{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:15px;
+
+}
+
+.booking-status{
+
+    background:#fff3cd;
+
+    color:#856404;
+
+    padding:5px 12px;
+
+    border-radius:20px;
+
+    font-size:13px;
+
+}
+
+.booking-body p{
+
+    margin:10px 0;
+
+}
+
+.booking-footer{
+
+    margin-top:20px;
+
+}
+
+.view-btn{
+
+    width:100%;
+
+    background:#E31E24;
+
+    color:white;
+
+    border:none;
+
+    padding:12px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+}
+
+
+.modal-overlay{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.55);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:1000;
+
+}
+
+.booking-modal{
+
+    width:750px;
+
+    max-width:95%;
+
+    background:#fff;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+}
+
+.modal-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px;
+
+    border-bottom:1px solid #eee;
+
+}
+
+.modal-body{
+
+    padding:20px;
+
+}
+
+.detail-row{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    padding:15px 0;
+
+    border-bottom:1px solid #f2f2f2;
+
+}
+
+.modal-footer{
+
+    padding:20px;
+
+}
+
+.quote-btn{
+
+    width:100%;
+
+    background:#E31E24;
+
+    color:#fff;
+
+    border:none;
+
+    padding:14px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+}
+
+
+.quote-modal{
+
+    width:500px;
+
+    max-width:95%;
+
+    background:#fff;
+
+    border-radius:15px;
+
+    padding:25px;
+
+}
+
+.quote-modal label{
+
+    display:block;
+
+    margin-top:15px;
+
+    margin-bottom:8px;
+
+    font-weight:600;
+
+}
+
+.quote-modal input,
+
+.quote-modal select,
+
+.quote-modal textarea{
+
+    width:100%;
+
+    padding:12px;
+
+    border:1px solid #ddd;
+
+    border-radius:10px;
+
+    outline:none;
+
+}
+
+.quote-buttons{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    gap:15px;
+
+    margin-top:25px;
+
+}
+
+.cancel-btn{
+
+    background:#6c757d;
+
+    color:white;
+
+    border:none;
+
+    padding:12px 25px;
+
+    border-radius:8px;
+
+}
+
+.submit-btn{
+
+    background:#E31E24;
+
+    color:white;
+
+    border:none;
+
+    padding:12px 25px;
+
+    border-radius:8px;
+
+}

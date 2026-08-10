@@ -1,0 +1,59 @@
+.common-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:25px;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+
+}
+
+.common-header h2{
+
+    font-size:30px;
+
+    color:#222;
+
+    font-weight:700;
+
+}
+
+.common-add-btn{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    border:none;
+
+    background:#E31E24;
+
+    color:white;
+
+    padding:12px 22px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.common-add-btn:hover{
+
+    background:#c9181d;
+
+}

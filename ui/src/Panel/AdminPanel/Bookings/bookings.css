@@ -1,0 +1,222 @@
+.admin-bookings-page {
+
+    padding: 25px;
+
+}
+
+.admin-bookings-header {
+
+    margin-bottom: 25px;
+
+}
+
+.admin-bookings-header h2 {
+
+    margin: 0;
+
+    font-size: 28px;
+
+    color: #222;
+
+}
+
+.admin-bookings-header p {
+
+    margin-top: 7px;
+
+    color: #777;
+
+}
+
+
+.admin-bookings-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fill, minmax(330px, 1fr));
+
+    gap: 20px;
+
+}
+
+
+/* Card */
+
+.admin-booking-card {
+
+    background: #fff;
+
+    border: 1px solid #e8e8e8;
+
+    border-radius: 12px;
+
+    padding: 20px;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.07);
+
+    transition: 0.3s ease;
+
+}
+
+.admin-booking-card:hover {
+
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 8px 22px rgba(0, 0, 0, 0.11);
+
+}
+
+
+/* Header */
+
+.booking-card-header {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 10px;
+
+    margin-bottom: 18px;
+
+}
+
+.booking-card-header h3 {
+
+    margin: 0;
+
+    color: #d32f2f;
+
+    font-size: 19px;
+
+}
+
+
+/* Status */
+
+.booking-status {
+
+    padding: 5px 10px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    background: #eee;
+
+    color: #444;
+
+}
+
+
+/* Body */
+
+.booking-card-body {
+
+    border-top: 1px solid #eee;
+
+    border-bottom: 1px solid #eee;
+
+    padding: 14px 0;
+
+}
+
+.booking-card-body p {
+
+    margin: 9px 0;
+
+    color: #555;
+
+    font-size: 14px;
+
+    line-height: 1.4;
+
+}
+
+.booking-card-body strong {
+
+    color: #222;
+
+}
+
+
+/* Footer */
+
+.booking-card-footer {
+
+    margin-top: 18px;
+
+}
+
+.booking-card-footer button {
+
+    width: 100%;
+
+    border: none;
+
+    padding: 11px;
+
+    border-radius: 7px;
+
+    background: #d32f2f;
+
+    color: #fff;
+
+    cursor: pointer;
+
+    font-size: 14px;
+
+    font-weight: 500;
+
+    transition: 0.2s;
+
+}
+
+.booking-card-footer button:hover {
+
+    background: #b71c1c;
+
+}
+
+
+/* Empty */
+
+.no-bookings {
+
+    grid-column: 1 / -1;
+
+    text-align: center;
+
+    padding: 50px;
+
+    color: #777;
+
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .admin-bookings-page {
+
+        padding: 15px;
+
+    }
+
+    .booking-card-header {
+
+        align-items: flex-start;
+
+        flex-direction: column;
+
+    }
+
+}

@@ -1,0 +1,75 @@
+.lock-message{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:18px;
+
+    padding:20px;
+
+    margin-top:20px;
+
+    border-radius:15px;
+
+    border:1px solid #ffe4a3;
+
+    background:#fff9e8;
+
+}
+
+.lock-icon{
+
+    width:50px;
+
+    height:50px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:#ffcb45;
+
+    color:#333;
+
+    font-size:22px;
+
+    flex-shrink:0;
+
+}
+
+.lock-content h4{
+
+    margin:0 0 8px;
+
+    color:#222;
+
+    font-size:18px;
+
+}
+
+.lock-content p{
+
+    margin:0;
+
+    color:#666;
+
+    line-height:1.6;
+
+    font-size:15px;
+
+}
+
+@media(max-width:768px){
+
+    .lock-message{
+
+        flex-direction:column;
+
+    }
+
+}

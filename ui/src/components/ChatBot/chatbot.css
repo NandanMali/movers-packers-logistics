@@ -1,0 +1,148 @@
+/* Floating Button */
+
+.chat-toggle{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    width:60px;
+    height:60px;
+    border:none;
+    border-radius:50%;
+    background:#E31E24;
+    color:#fff;
+    font-size:24px;
+    cursor:pointer;
+    box-shadow:0 8px 25px rgba(227,30,36,.35);
+    transition:.25s;
+    z-index:9999;
+}
+
+.chat-toggle:hover{
+    transform: scale(1.05);
+}
+
+/* Window */
+
+.chat-window{
+    position:fixed;
+    bottom:90px;
+    right:20px;
+    width:330px;
+    height:500px;
+    background:#fff;
+    border-radius:18px;
+    box-shadow:0 15px 35px rgba(0,0,0,.2);
+    display:flex;
+    flex-direction:column;
+    overflow:hidden;
+    z-index:9999;
+}
+
+/* Header */
+
+.chat-header{
+    background:#E31E24;
+    color:#fff;
+    height: 56px;
+    padding: 16px;
+    font-size:18px;
+    font-weight:600;
+    text-align:center;
+}
+
+/* Body */
+
+.chat-body{
+    flex:1;
+    padding:15px;
+    overflow-y:auto;
+    background:#f7f7f7;
+}
+
+/* Messages */
+
+.msg{
+    max-width:80%;
+    padding:10px 14px;
+    margin-bottom:10px;
+    border-radius:12px;
+    word-break:break-word;
+    line-height:1.5;
+}
+
+.msg.bot{
+    background:#fff;
+    color:#222;
+    border:1px solid #ddd;
+    margin-right:auto;
+}
+
+.msg.user{
+    background:#E31E24;
+    color:#fff;
+    margin-left:auto;
+}
+
+.bubble{
+    padding:10px 14px;
+    font-size:14px;
+    border-radius:14px;
+    max-width:80%;
+}
+
+/* Footer */
+
+.chat-footer{
+    display:flex;
+    padding:10px;
+    gap:10px;
+    border-top:1px solid #eee;
+    background:#fff;
+}
+
+.chat-footer input{
+    flex:1;
+    border:1px solid #ddd;
+    height: 42px;
+    border-radius:25px;
+    padding:10px 15px;
+    outline:none;
+    font-size:14px;
+}
+
+.chat-footer button{
+    width:45px;
+    height:45px;
+    border:none;
+    border-radius:50%;
+    background:#E31E24;
+    color:#fff;
+    cursor:pointer;
+    font-size:18px;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+    .chat-window{
+        width:calc(100vw - 20px);
+        height:70vh;
+        right:10px;
+        bottom:85px;
+    }
+
+    .chat-toggle{
+        right:15px;
+        bottom:15px;
+    }
+
+}
+
+.chat-body::-webkit-scrollbar{
+    width:4px;
+}
+
+.chat-body::-webkit-scrollbar-thumb{
+    background:#d5d5d5;
+}

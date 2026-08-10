@@ -1,0 +1,36 @@
+.alert{
+  padding: 12px 20px;
+  border-radius: 8px;
+  margin: 10px 0;
+  color: white;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 9999;
+  position: fixed;
+  top: 20px;
+  width: 100%;
+}
+
+.alert-icon{
+    font-size: 20px;
+}
+
+.successAlert{
+  background: #28a745;
+}
+
+.errorAlert{
+  background: #dc3545;
+}
+
+.warningAlert{
+  background: #ffc107;
+  color: black;
+}
+
+.infoAlert{
+  background: #03cef7;
+  color: black;
+}

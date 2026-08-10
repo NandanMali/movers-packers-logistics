@@ -1,0 +1,290 @@
+/* assignedJobs  */
+
+.assigned-jobs-page{
+
+    padding:20px;
+
+}
+
+.assigned-jobs-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:25px;
+
+}
+
+.assigned-jobs-header h2{
+
+    font-size:28px;
+
+    color:#222;
+
+}
+
+.assigned-jobs-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fill,minmax(340px,1fr));
+
+    gap:20px;
+
+}
+
+
+/* assignedJobCard  */
+
+.assigned-job-card{
+
+    background:#fff;
+
+    border-radius:12px;
+
+    padding:20px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+    border:1px solid #ececec;
+
+}
+
+.assigned-job-card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+
+}
+
+.assigned-job-card h3{
+
+    color:#d32f2f;
+
+    margin-bottom:15px;
+
+    font-size:20px;
+
+}
+
+.assigned-job-card p{
+
+    margin:10px 0;
+
+    color:#555;
+
+    line-height:1.5;
+
+}
+
+.assigned-job-card p strong{
+
+    color:#222;
+
+}
+
+.assigned-job-card button{
+
+    width:100%;
+
+    margin-top:20px;
+
+    border:none;
+
+    outline:none;
+
+    background:#d32f2f;
+
+    color:#fff;
+
+    padding:12px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+    transition:.3s;
+
+}
+
+.assigned-job-card button:hover{
+
+    background:#b71c1c;
+
+}
+
+/* assigned Job Details  */
+
+.modal-overlay{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.55);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:1000;
+
+}
+
+.modal-box{
+
+    width:800px;
+
+    max-width:95%;
+
+    background:#fff;
+
+    border-radius:12px;
+
+    overflow:hidden;
+
+    box-shadow:0 10px 35px rgba(0,0,0,.3);
+
+}
+
+.modal-header{
+
+    display:flex;
+
+    /* justify-content:space-between; */
+
+    align-items:center;
+
+    background:#d32f2f;
+
+    color:#fff;
+
+    padding:15px 20px;
+
+}
+
+.modal-header h2{
+
+    margin:0;
+
+}
+
+.modal-header button{
+
+    border:none;
+
+    background:none;
+
+    color:#fff;
+
+    font-size:24px;
+
+    cursor:pointer;
+
+}
+
+.modal-body{
+
+    padding:25px;
+
+    max-height:70vh;
+
+    overflow:auto;
+
+}
+
+.modal-body h3{
+
+    margin:20px 0 10px;
+
+    color:#d32f2f;
+
+}
+
+.modal-body p{
+
+    margin:10px 0;
+
+    color:#444;
+
+}
+
+.modal-body hr{
+
+    margin:25px 0;
+
+}
+
+.modal-body select{
+
+    width:100%;
+
+    padding:12px;
+
+    border:1px solid #ddd;
+
+    border-radius:8px;
+
+    margin-top:10px;
+
+    margin-bottom:20px;
+
+}
+
+.modal-footer{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    gap:15px;
+
+    padding:20px;
+
+    border-top:1px solid #eee;
+
+}
+
+.modal-footer button{
+
+    border:none;
+
+    padding:12px 25px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+}
+
+.modal-footer button:first-child{
+
+    background:#e0e0e0;
+
+}
+
+.modal-footer button:last-child{
+
+    background:#d32f2f;
+
+    color:#fff;
+
+}
+
+.modal-footer button:last-child:hover{
+
+    background:#b71c1c;
+
+}

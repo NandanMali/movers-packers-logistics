@@ -1,0 +1,32 @@
+.user-page {
+  padding: 25px;
+}
+
+.user-stats {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+}
+
+.user-card {
+  background: white;
+  padding: 25px;
+  border-radius: 20px;
+}
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.booking-form input {
+  padding: 12px;
+}
+
+.booking-form button {
+  padding: 12px;
+  background: #E31E24;
+  color: white;
+  border: none;
+}
