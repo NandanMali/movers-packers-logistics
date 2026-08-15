@@ -92,9 +92,7 @@ const LogoutIcon = logoutMenu?.icon;
 
     </button>
 
-{/* </div> */}
 
-{/* )} */}
 
 </div>
 

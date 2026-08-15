@@ -67,7 +67,7 @@ function UserPayments() {
             <PaymentCard
               key={item.payment._id}
               item={item}
-              openReceipt={openReceipt}
+              openReceipt={()=>openReceipt(item.payment.bookingId)}
             />
           ))
         ) : (

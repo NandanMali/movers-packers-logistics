@@ -13,7 +13,7 @@ const LoginPage = () => {
 
   const [formData, setFormData] = useState({
     name: "",
-    username: "",
+    email: "",
     password: "",
     role: "",
   });
@@ -37,9 +37,9 @@ const LoginPage = () => {
         }
         break;
 
-      case "username":
+      case "email":
         if (!value.trim()) {
-          error = "Username is required";
+          error = "Email is required";
         }
         break;
 
@@ -78,9 +78,9 @@ const LoginPage = () => {
       newErrors.name = "Name is required";
     }
 
-    // Username Validation
-    if (!formData.username.trim()) {
-      newErrors.username = "Username is required";
+    // Email Validation
+    if (!formData.email.trim()) {
+      newErrors.email = "Email is required";
     } 
 
     // Password Validation
@@ -105,7 +105,7 @@ const LoginPage = () => {
       }, 2000);
 
       const users = {
-        username: formData.username,
+        email: formData.email,
         password: formData.password,
         name: formData.name,
         role: formData.role,
@@ -125,15 +125,15 @@ const LoginPage = () => {
           localStorage.setItem("role", res.data.users.role);
           localStorage.setItem("token", res.data.token);
           localStorage.setItem("ProfilePic",res.data.users.ProfilePic);
+          setTimeout(() => {
 
           setFormData({
             name: "",
-            username: "",
+            email: "",
             password: "",
             role: "",
           });
 
-          setTimeout(() => {
             if (res.data.users.role === "Admin") {
               navigate("/admin/dashboard");
             }
@@ -151,7 +151,11 @@ const LoginPage = () => {
           if (err.response.status === 403) {
             setAlert({ message: "Verify Your Email", type: "warningAlert" });
             setTimeout(() => {
-              navigate("/verify-otp");
+              navigate("/verify-otp",{
+            state: {
+              email: formData.email,
+            },
+          });
             }, 4000);
           } else if (err.response.status === 404) {
             setAlert({ message: "User Not Found (Invalid Details)", type: "warningAlert" });
@@ -265,18 +269,18 @@ const LoginPage = () => {
               </div>
 
               <div className="input-group">
-                <label>Username</label>
+                <label>Email</label>
 
                 <input
                   type="text"
-                  placeholder="Enter Your Username"
-                  name="username"
-                  value={formData.username}
+                  placeholder="Enter Your Email"
+                  name="email"
+                  value={formData.email}
                   onChange={handleChange}
                 />
-                {errors.username && (
+                {errors.email && (
                   <span className="error" style={{ color: "red" }}>
-                    {errors.username}
+                    {errors.email}
                   </span>
                 )}
               </div>

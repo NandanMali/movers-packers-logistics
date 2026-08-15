@@ -49,11 +49,14 @@ if (otp.length !== 6) {
   setLoading(true);
 
 setAlert(null)
-   axios.post(apiUrlUser+"verify-otp",{email, otp,}).then(()=>{
+  await axios.post(apiUrlUser+"verify-otp",{email, otp}).then(()=>{
 
      setAlert({message: "Email Verified Successfully",type:"successAlert"});
 
-      navigate("/login");
+     setTimeout(() => {
+      
+       navigate("/login");
+      }, 3000);
   }).catch((error)=>{
 
     if (error.response.status===400) {
@@ -107,7 +110,7 @@ return (
       {email}
     </span>
 
-    <form onSubmit={handleSubmit}>
+    <form >
       <input
         type="text"
         maxLength="6"
@@ -123,7 +126,7 @@ return (
       <br/>
       
 
-      <button type="submit" className="verifyBtn" disabled={loading}>
+      <button onClick={handleSubmit} className="verifyBtn" disabled={loading}>
         {loading? "Verifying...": "Verify OTP"}
       </button>
       <br/>

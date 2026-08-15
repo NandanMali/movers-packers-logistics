@@ -29,13 +29,13 @@ export const save = async(req,res)=>{
     const profileicon = req.files?.file;
     const profile = profileicon ? profileicon.name : "";
     // Generate 6 digit OTP
-    const otp = Math.floor(
+    let otp = Math.floor(
       100000 + Math.random() * 900000
     ).toString();
     
 
     // OTP expiry (10 minutes)
-    const otpExpires =
+    let otpExpires =
       new Date(Date.now() + 10 * 60 * 1000);
     
 
@@ -52,12 +52,13 @@ export const save = async(req,res)=>{
               );
           await profileicon.mv(uploadPath);
         }
-        res.status(201).json({'success':true,UserDetails});
-        
         // Send OTP Email
         await sendOTP(UserDetails.email, otp);
+        res.status(201).json({'success':true,UserDetails});
+        
     }
     catch(error){
+      console.log(error)
         res.status(500).json({'status':false});
     }
 };
@@ -147,7 +148,8 @@ export var update=async(req,res)=>{
 };  
 
 export const login=async(req,res)=>{
-    if(req.body.username!=undefined)
+  try{
+      if(req.body.email!=undefined)
   { 
    var userDetails={...req.body};
    var users=await UserSchemaModel.find(userDetails);     
@@ -161,6 +163,19 @@ export const login=async(req,res)=>{
     res.status(200).json({"success":true,"token":token,"users":users[0],"message":"Login Successful"});
    }
    else
+    // Generate 6 digit OTP
+    var otp = Math.floor(
+      100000 + Math.random() * 900000
+    ).toString();
+    
+
+    // OTP expiry (10 minutes)
+    var otpExpires =
+      new Date(Date.now() + 10 * 60 * 1000);
+    
+      
+      await UserSchemaModel.updateMany({email:users[0].email},{$set:{otp:otp,otpExpires:otpExpires}}); 
+    await sendOTP(users[0].email, otp);
     res.status(403).json({"success":false,"token":"error","message":"Not Verified"})
 }
 else{
@@ -168,9 +183,12 @@ else{
 }
    
   }
-  else
+}
+  catch(error)
+  {
+    console.log(error);
    res.status(500).json({"success":false,"token":"error","message":"Server Error"});
- };
+ }};
 
 
  //verify-otp

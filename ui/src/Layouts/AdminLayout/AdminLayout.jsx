@@ -1,10 +1,11 @@
 import { Outlet } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ConfirmModal from "../../components/confirmationBox/ConfirmationBox";
 import Sidebar from "../../components/Dashboard/Sidebar/Sidebar";
 import AdminMenu from "../../config/AdminMenu";
 import DashboardNavbar from "../../components/Dashboard/Navbar/Navbar";
+import '../dashboard.css';
 
 const AdminLayout = () => {
   const navigate=useNavigate()
@@ -21,7 +22,22 @@ const AdminLayout = () => {
       replace:true,
     });
   };
+
+  useEffect(()=>{
+     if (window.innerWidth <= 1024) {
+    setSidebarOpen(false);
+  }
+  },[])
+  const handleMenuClick = () => {
+  if (window.innerWidth <= 1024) {
+    setSidebarOpen(false);
+  }
+};
+
+ 
   return (
+    <div className="layout">
+
     
 <div
   className={`dashboard-layout ${
@@ -33,6 +49,7 @@ const AdminLayout = () => {
     title="Movers & Packers"
     menu={AdminMenu}
     isOpen={sidebarOpen}
+    onClickMenu={handleMenuClick}
     onLogoutClick={() => setShowConfirmationModal(true)}
 />
 
@@ -62,6 +79,7 @@ const AdminLayout = () => {
     </div>
 
 </div>
+        </div>
   );
 };
 

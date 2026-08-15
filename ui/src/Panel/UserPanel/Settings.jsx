@@ -36,9 +36,10 @@ const UserSettings = () => {
     // navigate(-1);
   }
   return (
+    <>
+      <h1>Settings</h1>
     <div className="admin-page">
 
-      <h1>Settings</h1>
 
       {!showBack && <div className="settings-grid">
 
@@ -86,7 +87,9 @@ const UserSettings = () => {
         </>
       ):(<></>)}
       {showBack && (cpass ? <ChangePassword /> : <ChangeEmail />)}
-      </div>)
+      </div>
+      </>
+      )
 };
 
 export default UserSettings;

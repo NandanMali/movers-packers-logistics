@@ -62,7 +62,6 @@ const ChangeEmail = () => {
   };
 
   const [existingEmails,setExistingsEmail]=useState([]);
-    const [existingUsernames,setExistingsUsernames]=useState([]);
   useEffect(()=>{ 
     axios.get(apiUrlUser+"fetch").then((res)=>{
       const users=res.data;
@@ -113,7 +112,7 @@ const ChangeEmail = () => {
 
       setAlert(null);
       axios
-        .patch(apiUrlUser + "update", {condition_obj:{email:formData.currentEmail},condition_obj:{email:formData.newEmail,status:false}})
+        .patch(apiUrlUser + "update", {condition_obj:{email:formData.currentEmail},content_obj:{email:formData.newEmail,status:false}})
         .then((res) => {
 
           setAlert({ message: "Email Changed Successful", type: "successAlert" });
@@ -152,6 +151,7 @@ const ChangeEmail = () => {
         {/* <!-- RIGHT PANEL --> */}
 
         <div className="right-panel">
+          {aleert && <Alert type={aleert.type} message={aleert.message} />}
           <div className="login-card">
             <div className="user-icon">
               <i className="fas fa-user"></i>

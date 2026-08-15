@@ -83,6 +83,8 @@ function App() {
       <Routes>
         {/* Public Routes */}
 
+
+
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/services" element={<ServicePage />} />
@@ -92,6 +94,9 @@ function App() {
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/verify-otp" element={<VerifyOTP />} />
+       
+
+       
 
         {/* Admin Routes */}
 

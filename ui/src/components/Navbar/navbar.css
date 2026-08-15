@@ -115,24 +115,3 @@
     }
 }
 
-
-/* =========================================
-   BODY OFFSET
-========================================= */
-
-/*
-   Because navbar is fixed-top, content needs
-   some top spacing so it doesn't hide behind it.
-*/
-
-body {
-    padding-top: 75px;
-}
-
-
-/* Mobile body offset */
-@media (max-width: 991.98px) {
-    body {
-        padding-top: 75px;
-    }
-}

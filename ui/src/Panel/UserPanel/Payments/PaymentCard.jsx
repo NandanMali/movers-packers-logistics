@@ -45,7 +45,7 @@ function PaymentCard({ item, openReceipt }) {
         </p>
       </div>
 
-      <button onClick={() => openReceipt(payment.bookingId)}>
+      <button onClick={openReceipt}>
         View Receipt
       </button>
     </div>

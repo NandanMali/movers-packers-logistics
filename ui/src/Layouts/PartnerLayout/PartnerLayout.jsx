@@ -34,6 +34,16 @@ useEffect(()=>{
   }, 1000);
 },[]);
 
+useEffect(()=>{
+     if (window.innerWidth <= 1024) {
+    setSidebarOpen(false);
+  }
+  },[])
+  const handleMenuClick = () => {
+  if (window.innerWidth <= 1024) {
+    setSidebarOpen(false);
+  }
+};
 
 const menu=PartnerMenu(complete);
     const handleConfirmation = () => {
@@ -54,6 +64,7 @@ title="Movers & Packers"
  isOpen={sidebarOpen}
 
 menu={menu}
+onClickMenu={handleMenuClick}
 
 onLogoutClick={() =>
         setShowConfirmationModal(true)

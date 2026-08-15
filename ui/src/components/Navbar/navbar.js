@@ -1,5 +1,6 @@
 import { Link, NavLink } from "react-router-dom";
 import "./navbar.css";
+import { useEffect } from "react";
 
 function Navbar() {
 
@@ -14,8 +15,12 @@ function Navbar() {
         }
     }
 };
+
+useEffect(()=>{
+document.body.style.paddingTop="75px";
+},[])
   return (
-    <nav className="navbar navbar-expand-lg bg-white navbar-light shadow fixed-top p-0">
+    <nav className="navbar navbar-expand-lg bg-white navbar-light shadow fixed-top p-0 " style={{padding:"75px"}}>
       {/* Logo */}
       <Link
         to="/"

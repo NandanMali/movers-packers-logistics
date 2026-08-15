@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FaBell, FaBars } from "react-icons/fa";
 import "../dashboard.css";
 
@@ -13,11 +13,15 @@ const DashboardNavbar = ({
     role:localStorage.getItem("role")
 };
 
+ useEffect(()=>{
+    document.body.style.padding="0"
+  },[])
+
 
   return (
-    <header className="navbar">
+    <header className="panel-navbar">
 
-      <div className="navbar-left">
+      <div className="panel-navbar-left">
 
         <button
           className="sidebar-toggle"
@@ -32,7 +36,7 @@ const DashboardNavbar = ({
 
       </div>
 
-      <div className="navbar-right">
+      <div className="panel-navbar-right">
 
         {/* <input
           type="text"

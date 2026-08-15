@@ -1,5 +1,5 @@
 import { Outlet, useNavigate } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ConfirmModal from "../../components/confirmationBox/ConfirmationBox";
 import Sidebar from "../../components/Dashboard/Sidebar/Sidebar";
 import UserMenu from "../../config/UserMenu";
@@ -20,6 +20,17 @@ const UserLayout = () => {
     });
   };
 
+  useEffect(()=>{
+       if (window.innerWidth <= 1024) {
+      setSidebarOpen(false);
+    }
+    },[])
+    const handleMenuClick = () => {
+    if (window.innerWidth <= 1024) {
+      setSidebarOpen(false);
+    }
+  };
+
   return (
     <div className={`dashboard-layout ${
     sidebarOpen ? "" : "sidebar-closed"
@@ -31,6 +42,7 @@ title="Movers & Packers"
 
 menu={UserMenu}
  isOpen={sidebarOpen}
+ onClickMenu={handleMenuClick}
 
 onLogoutClick={() =>
         setShowConfirmationModal(true)
